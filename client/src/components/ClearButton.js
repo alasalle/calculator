@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { NumberContext } from './NumberProvider';
 
 const ClearButton = () => {
+  const {clearDisplayHandler} = useContext(NumberContext);
   return (
-    <button type="button">C</button>
+    <button type="button" onClick={clearDisplayHandler}>C</button>
   );
 };
 

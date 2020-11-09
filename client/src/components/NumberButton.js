@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { NumberContext } from './NumberProvider';
 
 const NumberButton = ({ buttonValue }) => {
+  const { displayValueHandler } = useContext(NumberContext);
   return (
-    <button type="button">{buttonValue}</button>
+    <button type="button" onClick={() => displayValueHandler(buttonValue)}>{buttonValue}</button>
   );
 };
 

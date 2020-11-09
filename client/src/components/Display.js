@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import { NumberContext } from './NumberProvider';
 
 const Display = () => {
-    const {number} = useContext(NumberContext);
+    const {number, storedNum, functionType } = useContext(NumberContext);
     return (
-        <h1>{number}</h1>
+        <div>
+        <h1>{!number.length && !storedNum ? '0' : number || storedNum}</h1>
+        <p>{!storedNum ? '' : `${storedNum} ${functionType} ${number}`}</p>
+        </div>
     )
 }
 
