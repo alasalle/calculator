@@ -1,12 +1,13 @@
+import React from 'react';
 import Calculator from './components/Calculator';
+import NumberProvider from './components/NumberProvider';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Calculator</h1>
-      <Calculator />
-    </div>
+const App = () =>  (
+
+  <NumberProvider>
+    <Calculator />
+  </NumberProvider>
   );
-}
+
 
 export default App;
