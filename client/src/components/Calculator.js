@@ -7,7 +7,9 @@ import EqualButton from './EqualButton';
 
 
 const Calculator = () => {
-    <div>
+
+    return (
+        <div>
         <Display />
         <div className='buttonPad'>
             <ClearButton />
@@ -34,6 +36,7 @@ const Calculator = () => {
 
         </div>
     </div>
+    )
 }
 
 export default Calculator
