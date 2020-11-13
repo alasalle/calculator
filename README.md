@@ -20,6 +20,9 @@ Features:
 - Divide
 - History
 - Clear current value and expression
+- Dark Mode
+- Font Changer
+- Conversion Tool
 
 ## Developed With
 
