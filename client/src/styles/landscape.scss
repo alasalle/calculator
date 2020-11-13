@@ -1,0 +1,49 @@
+div.container.landscape.landscape.landscape {
+  grid-template-rows: 15vh 85vh;
+  grid-template-columns: 1fr;
+  .display > .result {
+    padding: 23% 5% 0 5%;
+    width: 100%;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  .calcBox {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    .buttonPad {
+      border-top: none;
+      border-right: 1px solid #3f4895;
+      width: 100%;
+      max-width: 100%;
+      grid-template-columns: repeat(5, 13%);
+      grid-template-rows: repeat(4, 18%);
+      .buttonContainer.buttonContainer.buttonContainer.buttonContainer.buttonContainer {
+        button {
+          max-width: 100%;
+          padding-bottom: 100%;
+        }
+      }
+      .clearButtonContainer {
+        grid-row-end: 2 span;
+        .clearButton {
+          height: 100%;
+          border-radius: 40px;
+        }
+      }
+      .zeroButton.landscape.landscape.landscape {
+        grid-column: 2/4;
+        .buttonContainer.buttonContainer.buttonContainer.buttonContainer {
+          button {
+            max-height: 100%;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

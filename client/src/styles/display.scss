@@ -1,0 +1,64 @@
+.display {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 10% 80%;
+  .result {
+    padding: 23% 0 0 0;
+    width: 90%;
+    justify-self: center;
+    border-bottom: 1px solid #3f4895;
+  }
+  .logList {
+    text-align: right;
+    color: #acafd1;
+  }
+  .ant-collapse-borderless.ant-collapse-borderless {
+    z-index: 900;
+    background: #2f388c;
+    height: 100%;
+    .ant-collapse-content-box {
+      overflow-y: scroll;
+      max-height: 24vh;
+    }
+    .anticon.anticon-caret-down.ant-collapse-arrow > svg {
+      fill: #bdc3c7;
+      height: 1.3rem;
+      width: 1.3rem;
+    }
+    .ant-collapse-item-active {
+      background: rgba(19, 23, 57, 0.9);
+    }
+  }
+
+  .ant-collapse-item.ant-collapse-item.ant-collapse-item.ant-collapse-item {
+    border-bottom: none !important;
+  }
+  .log {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 1fr;
+    font-size: 1rem;
+    align-items: center;
+    justify-items: center;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  h2,
+  p {
+    width: 100%;
+    text-align: center;
+    color: #acafd1;
+  }
+  h2 {
+    font-size: 4rem;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}

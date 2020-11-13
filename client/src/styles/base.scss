@@ -1,0 +1,15 @@
+div.container {
+  background-color: #2f388c;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 15vh 25vh 60vh;
+  grid-template-columns: 1fr;
+  align-items: start;
+  @media (min-width: 799px) and (min-height: 1279px) {
+    grid-template-rows: 12vh 28vh 60vh;
+  }
+  @media (min-width: 1120px) and (min-height: 1020px) {
+    grid-template-rows: 15vh 25vh 60vh;
+  }
+}
