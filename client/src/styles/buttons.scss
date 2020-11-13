@@ -11,7 +11,7 @@ div.container {
     align-self: center;
     padding-top: 5%;
 
-    @media (min-width: 361px) {
+    @media (min-width: 359px) {
       width: 90%;
     }
     @media (min-width: 425px) {
@@ -26,6 +26,14 @@ div.container {
     @media (min-width: 635px) {
       width: 50%;
       max-width: 380.5px;
+    }
+
+    @media (min-width: 319px) and (min-height: 567px) {
+      grid-template-columns: repeat(4, 16%);
+    }
+
+    @media (min-width: 410px) and (min-height: 822px) {
+      grid-template-columns: repeat(4, 20%);
     }
 
     @media (min-width: 799px) and (min-height: 1279px) {

@@ -6,6 +6,9 @@ div.container.landscape.landscape.landscape {
     width: 100%;
     h2 {
       font-size: 3rem;
+      @media (min-width: 1000px) {
+        font-size: 5rem;
+      }
     }
   }
   .calcBox {
