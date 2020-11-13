@@ -144,7 +144,7 @@ div.container.landscape {
     width: 1.3rem;
   }
   .bm-menu-wrap {
-    width: 50vw !important;
+    max-width: 50vw !important;
     height: 85vh;
     overflow-y: scroll;
     .bm-menu {
