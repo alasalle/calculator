@@ -126,6 +126,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   h3 {
     border-bottom: 1px solid white;
     margin-bottom: 10px;
+    font-size: 1.3rem;
+    @media (min-width: 1000px) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -140,7 +144,7 @@ div.container.landscape {
     width: 1.3rem;
   }
   .bm-menu-wrap {
-    width: 57vw;
+    width: 50vw !important;
     height: 85vh;
     overflow-y: scroll;
     .bm-menu {
