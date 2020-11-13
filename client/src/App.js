@@ -1,10 +1,14 @@
-import React from "react";
-import Calculator from "./components/Calculator";
-import NumberProvider from "./components/NumberProvider";
+import React from 'react';
+
+import Calculator from './components/Calculator';
+import NumberProvider from './context/NumberProvider';
+import SettingsProvider from './context/SettingsProvider';
 
 const App = () => (
   <NumberProvider>
-    <Calculator />
+    <SettingsProvider>
+      <Calculator />
+    </SettingsProvider>
   </NumberProvider>
 );
 
