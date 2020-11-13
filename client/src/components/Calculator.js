@@ -3,7 +3,7 @@ import { SettingsContext } from '../context/SettingsProvider';
 import { useMediaQuery } from 'react-responsive';
 import { FaDivide } from 'react-icons/fa';
 import Display from './Display';
-import Navigation from './Navigation';
+import Menu from './Menu';
 import NumberButton from './buttons/NumberButton';
 import FunctionButton from './buttons/FunctionButton';
 import ClearButton from './buttons/ClearButton';
@@ -28,7 +28,7 @@ const Calculator = () => {
             darkMode ? 'darkMode' : 'lightMode'
           }`}
         >
-          <Navigation />
+          <Menu />
           <div className='calcBox'>
             <div className='buttonPad'>
               <FunctionButton icon={<FaDivide />} buttonValue='/' />
@@ -60,7 +60,7 @@ const Calculator = () => {
         <div
           className={`container ${font} ${darkMode ? 'darkMode' : 'lightMode'}`}
         >
-          <Navigation />
+          <Menu />
           <Display />
           <div className='buttonPad'>
             <ClearButton />

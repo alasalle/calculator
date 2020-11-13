@@ -5,7 +5,7 @@ import { Switch, Radio, Button } from 'antd';
 import { NumberContext } from '../context/NumberProvider';
 import { SettingsContext } from '../context/SettingsProvider';
 
-const Navigation = () => {
+const Menu = () => {
   let { number } = useContext(NumberContext);
   let {
     darkMode,
@@ -75,4 +75,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Menu;
